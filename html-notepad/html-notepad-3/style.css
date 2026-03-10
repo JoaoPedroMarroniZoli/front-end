@@ -1,0 +1,270 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+BODY
+*/
+
+body{
+    background-color: #320ECC;
+    padding: 20px;
+}
+
+
+/*
+CONTAINER PRINCIPAL
+*/
+
+#pagina{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px;
+    padding: 20px;
+}
+
+
+/*
+HEADER
+*/
+
+#pagina header{
+    background-color: rgb(113, 15, 205);
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px;
+    padding: 20px;
+    text-align: center;
+    grid-column: span 2;
+    margin-bottom: 15px;
+}
+
+#pagina header h1,
+#pagina header p{
+    color: rgb(255, 251, 251);
+}
+
+
+/*
+MENU PRINCIPAL
+*/
+
+nav{
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    background-color: rgb(113, 15, 205);
+    color: #222;
+}
+
+
+/*
+MAIN / SECTIONS
+*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+main section{
+    border: 2px #222 solid;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 0;
+}
+
+section h2{
+    text-align: center;
+    background-color: #320ECC;
+    border-radius: 10px;
+    padding: 10px;
+    border: #222 solid;
+    color: white;
+}
+
+
+/*
+ARTIGOS
+*/
+
+article{
+    background-color: white;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 6px;
+}
+
+article h3{
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+summary{
+    background-color: #320ECC;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+/*
+BLOCOS DE TEXTO ESPECIAIS
+*/
+
+blockquote{
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-left: 5px solid #710FCD;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+pre{
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 8px;
+    overflow-x: auto;
+}
+
+code{
+    display: block;
+    text-align: center;
+}
+
+
+/* 
+TABELAS
+*/
+
+table{
+    border-collapse: collapse;
+    margin: 15px auto;
+    width: 90%;
+}
+
+caption{
+    background-color: #710FCD;
+    color: white;
+    padding: 5px;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+table th{
+    background-color: #333;
+    color: white;
+}
+
+/* 
+ASIDE
+*/
+
+aside{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 4px solid #710FCD;
+    border-radius: 6px;
+}
+
+aside h4{
+    font-style: italic;
+}
+
+/*
+FORMULÁRIOS
+*/
+
+#form,
+#formulario,
+#formulario-secreto{
+    grid-column: 1 / -1;
+}
+
+form{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset{
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"]{
+    background-color: #710FCD;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #320ECC;
+}
+
+
+/*
+FOOTER
+*/
+
+footer{
+    grid-column: span 2;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer address{
+    font-style: normal;
+}
