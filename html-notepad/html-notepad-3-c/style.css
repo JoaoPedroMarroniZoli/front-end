@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 20px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    margin: 20px 0px;
+    text-align: center;
+    padding: 20px;
+}
+main section h2 {
+    font-size: 50px;
+    background-image: linear-gradient(to bottom, #FA0202, #4B1515);
+    border-radius: 10px;
+    padding: 20px;
+    color: aliceblue;
+    border: 3px solid black;
+}
+
+summary {
+    background-image: linear-gradient(to right, #FA0202, #FA4646);
+    box-shadow: 5px 5px 2px #4B1515;
+    color: white;
+    text-shadow: 2px 2px 4px #282727;
+    border-radius: 20px;
+    width: 200px;
+    margin: 0 auto;
+    }
+
+article {
+    margin: 15px 0px;
+    box-shadow: 5px 5px 2px #959494;
+}
+
+article h3 {
+
+}
+
+aside {
+    margin: 15px 0px;
+    box-shadow: 5px 5px 2px #959494;
+}
+
+nav ul {
+    display: flex;
+}
