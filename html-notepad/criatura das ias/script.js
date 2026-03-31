@@ -3,6 +3,9 @@ const btn = document.getElementById("com");
 const botao = document.getElementById("meuBotao");
 const container = document.getElementById("video-container");
 const video = document.getElementById("meu-video");
+const fundoDia = "cenario.png";
+const fundoNoite = "cenario-noite.png";
+
 
 const estados = {
     normal: "b_n.png",
@@ -17,6 +20,8 @@ let intervalo = null;
 let time_click = null;
 let time_out = null;
 let vivo = true;
+let horaAtual = 0;
+let intervaloFundo = null;
 
 /*---------------- CONTROLADOR ----------------*/
 function controlador() {
@@ -40,7 +45,23 @@ function controlador() {
         }
     }, 1000);
 }
+/*---------------- TRANSIÇÃO CENARIO ----------------*/
+function atualizarFundo() {
+    if (intervaloFundo) clearInterval(intervaloFundo);
 
+    intervaloFundo = setInterval(() => {
+        horaAtual++;
+
+        if (horaAtual >= 12) {
+            document.body.style.backgroundImage = `url('${fundoNoite}')`;
+        } else {
+            document.body.style.backgroundImage = `url('${fundoDia}')`;
+        }
+
+        if (horaAtual >= 24) horaAtual = 0;
+
+    }, 1000); // ⬅ recomendo 1000 (1s) pra simular melhor tempo
+}
 /*---------------- ALIMENTAR ----------------*/
 function alimentar() {
     if (!vivo) {
@@ -76,3 +97,4 @@ btn.addEventListener("click", alimentar);
 
 /*---------------- START ----------------*/
 controlador();
+atualizarFundo();
