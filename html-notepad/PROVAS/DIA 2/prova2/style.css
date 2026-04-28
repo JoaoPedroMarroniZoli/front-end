@@ -1,0 +1,57 @@
+/* Fundo geral */
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+h1 {
+    text-align: center;
+    color: #333;
+}
+button {
+    display: flex;
+    margin: 5px auto;
+}
+
+/* Container dos grupos */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Cartões */
+.card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 250px;
+    color: #333;
+}
+
+/* Título do grupo */
+.card h2 {
+    text-align: center;
+}
+
+/* Lista */
+.card ul {
+    padding-left: 20px;
+}
+
+/* Details */
+details {
+    margin-top: 10px;
+}
+
+/* Summary */
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
