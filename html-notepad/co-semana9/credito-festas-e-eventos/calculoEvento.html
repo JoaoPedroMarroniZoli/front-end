@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Bank - Festas e Eventos</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        select,
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #2b7cff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #1f5fd1;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Infinity Bank - Festas e Eventos</h2>
+
+        <label for="pacote">Escolha o Pacote:</label>
+
+        <select id="pacote">
+            <option value="50">Standard - R$ 50,00</option>
+            <option value="80">Premium - R$ 80,00</option>
+            <option value="120">Infinity Deluxe - R$ 120,00</option>
+        </select>
+
+        <label for="pessoas">Quantidade de Pessoas:</label>
+
+        <input type="number" id="pessoas" placeholder="Digite a quantidade">
+
+        <button onclick="calcularOrcamento()">
+            Calcular Orçamento
+        </button>
+
+        <div id="resultado">
+            <p>Custo Bruto: R$ 0.00</p>
+            <p>Taxa de Serviço: R$ 0.00</p>
+            <p>Desconto: R$ 0.00</p>
+            <p><strong>Total Final: R$ 0.00</strong></p>
+        </div>
+    </div>
+
+    <script src="eventario.js"></script>
+    
+</body>
+</html>

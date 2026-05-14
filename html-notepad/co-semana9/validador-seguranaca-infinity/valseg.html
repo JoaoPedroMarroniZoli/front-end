@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Segurança Infinity</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 450px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #004ecc;
+        }
+
+        .painel {
+            margin-top: 25px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+
+        .valido {
+            color: green;
+            font-weight: bold;
+        }
+
+        .invalido {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Validador de Segurança Infinity</h2>
+
+        <input 
+            type="text" 
+            id="cartao" 
+            maxlength="19"
+            placeholder="Digite o número do cartão"
+        >
+
+        <button onclick="analisarCartao()">
+            Analisar Cartão
+        </button>
+
+        <div class="painel">
+            <p id="status">Status:</p>
+            <p id="bandeira">Bandeira:</p>
+            <p id="setor">Categoria de Setor:</p>
+            <p id="banco">Banco Emissor:</p>
+        </div>
+
+    </div>
+
+    <script src="cartao.js"></script>
+
+</body>
+</html>
